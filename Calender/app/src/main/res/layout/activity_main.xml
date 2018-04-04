@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bear.coding.calender.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="243dp"
+        android:background="#ffffffff">
+
+        <Button
+            android:id="@+id/monthPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_alignParentLeft="true"
+            android:background="#FFFF0000"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/monthText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="MonthView"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/monthText1"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_alignBottom="@+id/monthPrevious"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#FFFF0000" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:stretchMode="columnWidth"
+        android:background="#FFFF0000"/>
+
+</LinearLayout>

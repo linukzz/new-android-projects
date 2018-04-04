@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.it.ho.itschool">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="아이티고"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="false">
+        <activity android:name=".activity.main.MainActivity" android:theme="@style/AppTheme" android:label="@string/app_name" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.main.Ya" android:theme="@style/AppTheme" android:label="@string/app_name" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.main.imgur" android:theme="@style/AppTheme" android:label="@string/app_name" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.bap.BapActivity" android:theme="@style/AppTheme" android:label="@string/title_activity_bap"/>
+        <activity android:name=".School.School_Main" android:theme="@style/AppTheme" android:label="학교정보"/>
+        <activity android:name=".activity.bap.star.BapStarActivity" android:theme="@style/AppTheme" android:label="@string/title_activity_bap_star"/>
+        <activity android:name=".activity.timetable.TimeTableActivity" android:theme="@style/AppTheme" android:label="@string/title_activity_time_table"/>
+        <activity android:name=".activity.settings.SettingsActivity" android:label="@string/title_activity_settings"/>
+        <activity android:name=".activity.notice.NoticeActivity" android:theme="@style/AppTheme" android:label="@string/title_activity_notice"/>
+        <activity android:name=".activity.notice.NoticeSendActivity" android:theme="@style/AppTheme" android:label="@string/title_activity_notice_send"/>
+        <activity android:name=".activity.schedule.ScheduleActivity" android:theme="@style/AppTheme" android:label="@string/title_activity_schedule"/>
+        <activity android:name=".activity.exam.ExamTimeActivity" android:theme="@style/AppTheme" android:label="@string/title_activity_exam_range"/>
+        <!-- AutoUpdate -->
+        <receiver android:name=".autoupdate.BroadCast" android:label="@string/title_broadcast_autoupdate" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".autoupdate.updateService" android:label="@string/title_service_autoupdate"/>
+        <!-- AppWidget -->
+        <receiver android:name=".widget.BapWidget" android:label="@string/widget_bap_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/bap_widget_info"/>
+        </receiver>
+        <receiver android:name=".widget.TimeTableWidget" android:label="@string/widget_timetable_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/time_table_widget_info"/>
+        </receiver>
+        <receiver android:name=".widget.WidgetBroadCast" android:permission="android.permission.RECEIVE_BOOT_COMPLETED" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                <action android:name="android.intent.action.TIME_CHANGED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,9 @@
+<root>
+    <item
+        name='android.widget.CompoundButton void setOnCheckedChangeListener(android.widget.CompoundButton.OnCheckedChangeListener)'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+    <item name='android.widget.SeekBar.OnSeekBarChangeListener'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

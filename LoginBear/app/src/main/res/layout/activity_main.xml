@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bear.coding.loginbear.MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/EditId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="35"
+        android:hint="enter your ID" />
+
+    <EditText
+        android:id="@+id/EditPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="35"
+        android:hint="enter your Password"
+        android:layout_below="@+id/EditId"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="make register"
+        android:layout_marginStart="12dp"
+        android:layout_below="@+id/EditPass"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@+id/EditPass"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/BearText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please do Login"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Login"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item01"
+        android:title="call"/>
+
+    <item
+        android:id="@+id/item02"
+        android:title="chat"/>
+
+    <item
+        android:id="@+id/item03"
+        android:title="email"/>
+
+    <item
+        android:id="@+id/item04"
+        android:title="delete"/>
+
+    <item
+        android:id="@+id/item05"
+        android:title="picture"/>
+
+    <item
+        android:id="@+id/item06"
+        android:title="login"/>
+
+</menu>

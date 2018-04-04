@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PraticeApplication</string>
+    <string name="hello_large_size">Hello(Large Size)</string>
+    <string name="hello_medium_size">Hello(Medium Size)</string>
+    <string name="hello_normal_size">Hello(Normal SIze</string>
+    <string name="hello_small_size">Hello(Small Size)</string>
+    <string name="kitkat_android_programming">KitKat Android programming</string>
+    <string name="one">One</string>
+    <string name="three">Three</string>
+    <string name="two">Two</string>
+    <string name="sex">SEX~~~</string>
+</resources>

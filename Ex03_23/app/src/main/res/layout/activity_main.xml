@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.ex03_23.MainActivity">
+
+<LinearLayout
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:ignore="ScrollViewSize">
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FF0000"
+        android:text="one"
+        android:width="150px"
+        tools:ignore="HardcodedText,PxUsage" />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FF00FF"
+        android:text="@string/two"
+        android:width="800px"
+        tools:ignore="PxUsage" />
+
+</LinearLayout>
+
+</HorizontalScrollView>

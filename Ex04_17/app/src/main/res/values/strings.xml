@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ex04_17</string>
+    <string name="call">call</string>
+    <string name="chat">chat</string>
+    <string name="email">email</string>
+    <string name="delete">delete</string>
+    <string name="picture">picture</string>
+    <string name="login">login</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/change"
+        android:icon=""
+        android:orderInCategory="100"
+        androidshowAsAction="ifRoom"
+        android:title="이미지 보기 방식"/>
+
+</menu>

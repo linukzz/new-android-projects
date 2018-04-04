@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ex06_08</string>
+    <string name="input_your_age">input your Age</string>
+    <string name="input_your_address">input your address</string>
+    <string name="input_your_name">input your name</string>
+    <string name="send">send</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item01"
+        android:icon="@android:drawable/sym_action_call"
+        android:title="call"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/item02"
+        android:icon="@android:drawable/sym_action_chat"
+        android:title="chat"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/item03"
+        android:icon="@android:drawable/sym_action_email"
+        android:title="email"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/item04"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="delete"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/item05"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="camera"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/item06"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="login"
+        tools:ignore="HardcodedText" />
+
+
+</menu>

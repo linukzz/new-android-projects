@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ex06_05</string>
+    <string name="message">Message</string>
+    <string name="browser">browser</string>
+    <string name="call">call</string>
+    <string name="email">email</string>
+</resources>

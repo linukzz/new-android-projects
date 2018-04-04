@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="hwajunghighschool.deb.kim"
+    android:versionCode="20"
+    android:versionName="1.5" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="hwajunghighschool.deb.kim.Splash"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.White" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="hwajunghighschool.deb.kim.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.White" />
+        <activity
+            android:name="hwajunghighschool.deb.kim.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.White" />
+        <activity
+            android:name="hwajunghighschool.deb.kim.WondangInfo"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="화정고 소개"
+            android:parentActivityName="hwajunghighschool.deb.kim.MainActivity"
+            android:theme="@style/Theme.White" />
+        <activity
+            android:name="hwajunghighschool.deb.kim.song.Song"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/song"
+            android:label="교가"
+            android:parentActivityName="hwajunghighschool.deb.kim.MainActivity"
+            android:theme="@style/Theme.White" />
+        <activity
+            android:name="hwajunghighschool.deb.kim.MadeBy"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="만든이"
+            android:parentActivityName="hwajunghighschool.deb.kim.SettingsActivity"
+            android:theme="@style/Theme.White" />
+        <activity
+            android:name="hwajunghighschool.deb.kim.Webview"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/Theme.White" />
+        <activity
+            android:name="hwajunghighschool.deb.kim.bap.Bap"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/bap"
+            android:label="급식"
+            android:parentActivityName="hwajunghighschool.deb.kim.MainActivity"
+            android:theme="@style/Theme.White" />
+        <activity
+            android:name="hwajunghighschool.deb.kim.Call"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/call"
+            android:label="연락처"
+            android:parentActivityName="hwajunghighschool.deb.kim.MainActivity"
+            android:theme="@style/Theme.White" />
+        <activity
+            android:name="hwajunghighschool.deb.kim.schedule.Schedule"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/calender"
+            android:label="일정"
+            android:parentActivityName="hwajunghighschool.deb.kim.MainActivity"
+            android:theme="@style/Theme.White" />
+        <activity
+            android:name="hwajunghighschool.deb.kim.SettingsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="설정"
+            android:parentActivityName="hwajunghighschool.deb.kim.MainActivity"
+            android:theme="@style/Theme.White" />
+            
+       
+        <activity
+            android:name="hwajunghighschool.deb.kim.rss.InfoRSSActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/rss"
+            android:label="학교 정보"
+            android:parentActivityName="hwajunghighschool.deb.kim.MainActivity"
+            android:theme="@style/Theme.White" />
+        <activity
+            android:name="hwajunghighschool.deb.kim.timetable.TimeTableGrade"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/timetable"
+            android:label="시간표(학년,반)"
+            android:parentActivityName="hwajunghighschool.deb.kim.MainActivity"
+            android:theme="@style/Theme.White" />
+        <activity
+            android:name="hwajunghighschool.deb.kim.timetable.TimeTableScrollTab"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/timetable"
+            android:label="시간표"
+            android:parentActivityName="hwajunghighschool.deb.kim.timetable.TimeTableGrade"
+            android:theme="@style/Theme.White" />
+
+        <receiver android:name="hwajunghighschool.deb.kim.bapautoupdate.BroadCast" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="hwajunghighschool.deb.kim.bapautoupdate.updateService"
+            android:label="자동 업데이트 서비스" />
+        <service android:name="hwajunghighschool.deb.kim.noti.bapnoti" >
+        </service>
+        <service android:name="hwajunghighschool.deb.kim.bap.alarmService" >
+        </service>
+
+        <receiver android:name=".noti.AutoStartNotifyReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <service android:name="hwajunghighschool.deb.kim.noti.timenoti"></service>
+        <activity android:name="THFeedbacks"></activity>
+    </application>
+
+</manifest>

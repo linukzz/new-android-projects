@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="item_entries">
+        <item>자동</item>
+        <item>매주 토요일</item>
+        <item>매주 월요일</item>
+    </string-array>
+      <string-array name="item_entries_value">
+          <item>1</item>
+          <item>0</item>
+          <item>-1</item>
+      </string-array>
+    <string-array name="d1">
+        <item>1967  설립자 이종욱 선생님 극동전파학원 설립</item>
+        <item>1974  한국원양공업전수학교로 설립인가</item>
+        <item>1975  신입생 520명 입학</item>
+        <item>1982  학교법인 은곡학원 설립</item>
+        <item>1992  은곡공업고등학교 설립인가 총 15학급(정규 고등학교 전환)</item>
+        <item>1994  학교 신축 공사 완공(본관 4층,실습동)</item>
+        <item>2000  학교 증축 공사 완공(본관 5층: 도서관, 특별실, 교실 각 1개씩</item>
+        <item>2007  산업자원부 특성화 고등학교로 선정</item>
+        <item>2007  생활관 신축 완공</item>
+        <item>2008  서울특별시 교육청 디지털 시스템 분야 특성화고 지정</item>
+        <item>2009  서울아이티고등학교로 교명변경</item>
+        <item>2009  태권도부 창단</item>
+        <item>2013  중소기업청 인력양성사업 특성화 고등학교 선정 및 학과개편
+                     (스마트전자통신과 5학급, 스마트웹디자인과 3학급, 폴리메카닉스과 2학급,
+                       총 10학급 인가)</item>
+        <item>2014  특성화고등학교 운영 성과평과 우수학교 지정</item>
+        <item>2014  학부모교육 우수학교 표창</item>
+        <item>전국 책 축제 우수학교</item>
+        <item>
+
+                                                        출처: 나무위키 서울아이티고 참조.
+        </item>
+    </string-array>
+
+</resources>

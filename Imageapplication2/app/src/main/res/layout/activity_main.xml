@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.imageapplication.MainActivity"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:id="@+id/imgCanada"
+        android:layout_width="151dp"
+        android:layout_height="102dp"
+        app:srcCompat="@drawable/canada"
+        tools:ignore="ContentDescription"
+        android:layout_weight="0.18" />
+
+    <ImageView
+        android:id="@+id/imgKorea"
+        android:layout_width="96dp"
+        android:layout_height="106dp"
+        app:srcCompat="@drawable/korea"
+        tools:ignore="ContentDescription"
+        android:layout_weight="0.45" />
+
+</LinearLayout>
